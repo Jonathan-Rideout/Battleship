@@ -62,7 +62,7 @@ def collision_check(coord, direction, ship_len, board):
                     letter = chr(ord(letter) + 1)
                 else:
                     return 0
-            return 0
+            return 1
         case "left":
             for _ in range(0, ship_len):
                 next_coord = letter + str(num)
@@ -70,7 +70,7 @@ def collision_check(coord, direction, ship_len, board):
                     num -= 1 
                 else:
                     return 0
-            return 0
+            return 1
         case "right":
             for _ in range(0, ship_len):
                 next_coord = letter + str(num)

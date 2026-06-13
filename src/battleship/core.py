@@ -54,10 +54,10 @@ def place_ships():
                         player_ship_board[next_coord] = ship_id
                         num += 1
 
-        #temp
-        display_board(player_ship_board)
+            placement_count += 1
 
-
+        
+        
 
     return 1
 
